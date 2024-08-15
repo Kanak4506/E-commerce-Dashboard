@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main_container flex">
+        <div class="left_bar sticky">
+            <div class="logo p-3 flex justify-center">
+                <img src="assets/icons/diamond.svg" alt="">
+            </div>
+            <ul class="justify-center my-9 flex flex-col items-center ">
+                <li id="home_btn"><img src="assets/icons/home.svg" alt=""></li>
+
+                <li id="grid_btn"><img src="assets/icons/grid.svg" alt=""></li>
+
+                <li id="star_btn"><img src="assets/icons/star.svg" alt=""></li>
+
+                <li id="superman_btn"><img src="assets/icons/super_man.svg" alt=""></li>
+
+                <li id="compass_btn"><img src="assets/icons/compass.svg" alt=""></li>
+
+                <li id="bag_btn"><img src="assets/icons/bag.svg" alt=""></li>
+
+                <li id="purse_btn"><img src="assets/icons/purse.svg" alt=""></li>
+
+                <li id="bot_btn"><img src="assets/icons/bot.svg" alt=""></li>
+
+                <li id="menu_btn"><img src="assets/icons/menu.svg" alt=""></li>
+
+                <li id="download_btn"><img src="assets/icons/download.svg" alt=""></li>
+
+            </ul>
+        </div>
+        <div class="drop">
+            <ul class="home_dropdown dropdown">
+                <li><img src="assets/icons/home.svg" alt=""> E-Commerce</li>
+                <li><img src="assets/icons/scenery.svg" alt="">Banking</li>
+            </ul>
+
+            <ul class="grid_dropdown dropdown">
+                <li><img src="assets/icons/blog.svg" alt="">Blog</li>
+                <li><img src="assets/icons/calendar.svg" alt="">Calendar</li>
+                <li><img src="assets/icons/chat.svg" alt="">Chat</li>
+                <li><img src="assets/icons/files.svg" alt="">Files</li>
+                <li><img src="assets/icons/gmail.svg" alt="">Mail</li>
+                <li><img src="assets/icons/task.svg" alt="">Task List</li>
+            </ul>
+            <ul class="star_dropdown dropdown">
+                <li><img src="assets/icons/chat.svg" alt="">Form Layout</li>
+                <li><img src="assets/icons/task.svg" alt="">Input</li>
+                <li><img src="assets/icons/task.svg" alt="">Float Label</li>
+                <li><img src="assets/icons/task.svg" alt="">Invalid State</li>
+                <li><img src="assets/icons/task.svg" alt="">Button</li>
+                <li><img src="assets/icons/task.svg" alt="">Table</li>
+                <li><img src="assets/icons/task.svg" alt="">List</li>
+                <li><img src="assets/icons/task.svg" alt="">Tree</li>
+                <li><img src="assets/icons/task.svg" alt="">Panel</li>
+                <li><img src="assets/icons/task.svg" alt="">Overlay</li>
+                <li><img src="assets/icons/task.svg" alt="">Media</li>
+                <li><img src="assets/icons/task.svg" alt="">Menu</li>
+                <li><img src="assets/icons/task.svg" alt="">Message</li>
+                <li><img src="assets/icons/task.svg" alt="">File</li>
+                <li><img src="assets/icons/task.svg" alt="">Chart</li>
+                <li><img src="assets/icons/task.svg" alt="">Misc</li>
+            </ul>
+
+            <ul class="superman_dropdown dropdown">
+                <li><img src="assets/icons/compass.svg" alt="">Free Blocks</li>
+                <li><img src="assets/icons/compass.svg" alt="">All Blocks</li>
+
+            </ul>
+            <ul class="compass_dropdown dropdown">
+                <li><img src="assets/icons/compass.svg" alt="">PrimeIcons</li>
+                <li><img src="assets/icons/compass.svg" alt="">Colors</li>
+                <li><img src="assets/icons/compass.svg" alt="">PrimeFlex</li>
+                <li><img src="assets/icons/compass.svg" alt="">Figma</li>
+
+
+
+            </ul>
+
+            <ul class="bag_dropdown dropdown">
+                <li><img src="assets/icons/compass.svg" alt="">Landing</li>
+                <li><img src="assets/icons/compass.svg" alt="">Auth</li>
+                <li><img src="assets/icons/compass.svg" alt="">Crud</li>
+                <li><img src="assets/icons/compass.svg" alt="">Timeline</li>
+                <li><img src="assets/icons/compass.svg" alt="">Invoice</li>
+                <li><img src="assets/icons/compass.svg" alt="">About Us</li>
+                <li><img src="assets/icons/compass.svg" alt="">Help</li>
+                <li><img src="assets/icons/compass.svg" alt="">Not Found</li>
+                <li><img src="assets/icons/compass.svg" alt="">Empty</li>
+                <li><img src="assets/icons/compass.svg" alt="">FAQ</li>
+                <li><img src="assets/icons/compass.svg" alt="">Contact Us</li>
+            </ul>
+
+            <ul class="purse_dropdown dropdown">
+                <li><img src="assets/icons/compass.svg" alt="">Product Overview</li>
+                <li><img src="assets/icons/compass.svg" alt="">Product List</li>
+                <li><img src="assets/icons/compass.svg" alt="">New Product</li>
+                <li><img src="assets/icons/compass.svg" alt="">Shopping Cart</li>
+                <li><img src="assets/icons/compass.svg" alt="">Checkout Form</li>
+                <li><img src="assets/icons/compass.svg" alt="">Order History</li>
+                <li><img src="assets/icons/compass.svg" alt="">Order Summary</li>
+            </ul>
+            <ul class="bot_dropdown dropdown">
+                <li><img src="assets/icons/compass.svg" alt="">List</li>
+                <li><img src="assets/icons/compass.svg" alt="">Create</li>
+
+            </ul>
+            <ul class="menu_dropdown dropdown">
+                <li><img src="assets/icons/compass.svg" alt="">Submenu 1</li>
+                <li><img src="assets/icons/compass.svg" alt="">Submenu 2</li>
+
+            </ul>
+            <ul class="download_dropdown dropdown">
+                <li><img src="assets/icons/compass.svg" alt="">Buy Now</li>
+                <li><img src="assets/icons/compass.svg" alt="">Documentation</li>
+
+            </ul>
+        </div>
+        <div class="right_side">
+            <div class="nav flex justify-between p-1 sticky">
+
+                <div class="d_name p-3 flex items-center">
+                    <img class="mx-2 menu" id="menu" src="assets/icons/menn.svg" alt="">
+                    E-COMMERCE DASHBOARD
+                </div>
+                <div class="right_side_icons flex items-center justify-center">
+                    <img src="assets/icons/search.svg" alt="">
+                    <img src="assets/icons/bell.svg" alt="">
+                    <div class="account p-2 flex items-center">
+                        <img src="assets/images/account.jpeg" alt=""> <div class="amelia">Amelia Stone</div>
+                    </div>
+                    <img src="assets/icons/menu_right.svg" alt="">
+                </div>
+            </div>
+
+            <div class="content_container flex flex-col items-center justify-center">
+                <div class="flex flex-wrap">
+
+                    <div class="each_div  bg-white rounded  m-7 shadow-md">
+                        <div class="type_card p-2 flex items-center">
+                            <img src="assets/icons/shopping.svg" alt=""> Orders
+                        </div>
+                        <div class="flex p-4 px-8">
+                            <div class="buy_info p-3">
+                                <div>640</div>
+                                <div>Pending</div>
+                            </div>
+                            <span class="mx-8 my-2"></span>
+                            <div class="buy_info p-3">
+                                <div>1420</div>
+                                <div>Completed</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="each_div revenue  bg-white rounded  m-7 shadow-md">
+                        <div class="type_card  revenuec p-2 flex items-center">
+                            <img src="assets/icons/shopping.svg" alt=""> Revenue
+                        </div>
+                        <div class="flex p-4 px-8">
+                            <div class="buy_info p-3">
+                                <div>$2.100</div>
+                                <div>Expenses</div>
+                            </div>
+                            <span class="mx-8 my-2"></span>
+                            <div class="buy_info p-3">
+                                <div>$9,640</div>
+                                <div>Income</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="each_div cust bg-white rounded  m-7 shadow-md">
+                        <div class="type_card custc p-2 flex items-center">
+                            <img src="assets/icons/shopping.svg" alt=""> Customers
+                        </div>
+                        <div class="flex p-4 px-8">
+                            <div class="buy_info p-3">
+                                <div>8272</div>
+                                <div>Active</div>
+                            </div>
+                            <span class="mx-8 my-2"></span>
+                            <div class="buy_info p-3">
+                                <div>25402</div>
+                                <div>Registered</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="each_div comm bg-white rounded  m-7 shadow-md">
+                        <div class="type_card commc p-2 flex items-center">
+                            <img src="assets/icons/shopping.svg" alt=""> Comments
+                        </div>
+                        <div class="flex p-4 px-8">
+                            <div class="buy_info p-3">
+                                <div>12</div>
+                                <div>New</div>
+                            </div>
+                            <span class="mx-8 my-2"></span>
+                            <div class="buy_info p-3">
+                                <div>85</div>
+                                <div>Responded</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="data_container flex flex-wrap justify-center items-center">
+                    <div class="graph_container  bg-white rounded  shadow-md rounded p-2">
+                        <div class="graph_heading flex justify-between">
+                            <div class="orders">Orders</div>
+                            <div class="right_orders flex items-center">
+                                <img src="assets/icons/search.svg" alt=""> Show
+                            </div>
+                        </div>
+
+                        <div class="graph_type_container flex flex-wrap my-4">
+                            <div class="each_graph_type px-2 m-1" id="new">
+                                <div class="graph_name flex items-center">
+                                    <img class="p-1" src="assets/icons/add.svg" alt=""> New
+                                </div>
+                                <img class="pt-4" src="assets/icons/bluegg.svg" alt="">
+                            </div>
+                            <div class="each_graph_type px-2 m-1" id="completed">
+                                <div class="graph_name flex items-center">
+                                    <img class="p-1" src="assets/icons/add.svg" alt=""> Completed
+                                </div>
+                                <img class="pt-4" src="assets/icons/purplegg.svg" alt="">
+                            </div>
+                            <div class="each_graph_type px-2 m-1" id="refunded">
+                                <div class="graph_name flex items-center">
+                                    <img class="p-1" src="assets/icons/add.svg" alt=""> Refunded
+                                </div>
+                                <img class="pt-4" src="assets/icons/greengg.svg" alt="">
+                            </div>
+                            <div class="each_graph_type px-2 m-1" id="cancelled">
+                                <div class="graph_name flex items-center">
+                                    <img class="p-1" src="assets/icons/add.svg" alt=""> Cancelled
+                                </div>
+                                <img class="pt-4" src="assets/icons/skygg.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="chart_container">
+                            <canvas id="chart_canvas" class="my-4" width="21vw" height="13vh"></canvas>
+                        </div>
+                    </div>
+                    <div class="sales_container bg-slate-50  bg-white rounded  rounded shadow-md p-2">
+                        <div class=" flex justify-between items-center">
+                            <div class="text-xl">Recent Sales</div>
+                            <div class="btn">
+                                <button class="p-2 week_btn flex items-center rounded cursor-pointer" id="week_btn"> <div class="week_input"> This Week </div><img class="pl-3" src="assets/icons/down.svg" alt=""></button>
+                            </div>
+                            <div class="week_dropdown absolute hidden cursor-pointer rounded bg-white">
+                                <li class="list-none rounded text-center selected p-2" id="this_week">This Week</li>
+                                <li class="list-none rounded text-center p-2" id="last_week">Last Week</li>
+                            </div>
+                        </div>
+                        <div class="py-4">
+                            Your sales activity over time.
+                        </div>
+                        <table class="sale_table text-sm w-full bg-white">
+                            <thead class="bg-gray-100 text-sm text-gray-600 leading-normal">
+                                <tr>
+                                    <th>ID <img src="assets/icons/sort.svg" alt=""></th>
+                                    <th>Category <img src="assets/icons/sort.svg" alt=""></th>
+                                    <th>Price <img src="assets/icons/sort.svg" alt=""></th>
+                                    <th>Status <img src="assets/icons/sort.svg" alt=""></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="hover:bg-gray-50">
+                                    <td>1000</td>
+                                    <td>Accessories</td>
+                                    <td>$65.00</td>
+                                    <td><Span
+                                            class="status text-xs text-white font-semibold rounded bg-green-500 p-1">INSTOCK</Span>
+                                    </td>
+                                    <td><img class="bg-blue-500 text-white p-2 rounded"
+                                            src="assets/icons/white_search.svg" alt=""></td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td>1001</td>
+                                    <td>Accessories</td>
+                                    <td>$72.00</td>
+                                    <td><span class="status text-xs text-white font-semibold rounded bg-red-500 p-1">OUT
+                                            OF STOCK</span></td>
+                                    <td><img class="bg-blue-500 text-white p-2 rounded"
+                                            src="assets/icons/white_search.svg" alt=""></td>
+
+
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td>1002</td>
+                                    <td>Fitness</td>
+                                    <td>$79.00</td>
+                                    <td><Span
+                                            class="status text-xs text-white font-semibold rounded bg-green-500 p-1">INSTOCK</Span>
+                                    </td>
+
+                                    <td><img class="bg-blue-500 text-white p-2 rounded"
+                                            src="assets/icons/white_search.svg" alt=""></td>
+
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td>1003</td>
+                                    <td>Clothing</td>
+                                    <td>$29.00</td>
+                                    <td><Span
+                                            class="status text-xs text-white font-semibold rounded bg-green-500 p-1">INSTOCK</Span>
+                                    </td>
+
+                                    <td><img class="bg-blue-500 text-white p-2 rounded"
+                                            src="assets/icons/white_search.svg" alt=""></td>
+
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td>1004</td>
+                                    <td>Accessories</td>
+                                    <td>$15.00</td>
+                                    <td><Span
+                                            class="status text-xs text-white font-semibold rounded bg-green-500 p-1">INSTOCK</Span>
+                                    </td>
+
+                                    <td><img class="bg-blue-500 text-white p-2 rounded"
+                                            src="assets/icons/white_search.svg" alt=""></td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                        <table class="sale_table2 text-sm w-full bg-white">
+                            <thead class="bg-gray-100 text-sm text-gray-600 leading-normal">
+                                <tr>
+                                    <th>ID <img src="assets/icons/sort.svg" alt=""></th>
+                                    <th>Category <img src="assets/icons/sort.svg" alt=""></th>
+                                    <th>Price <img src="assets/icons/sort.svg" alt=""></th>
+                                    <th>Status <img src="assets/icons/sort.svg" alt=""></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="hover:bg-gray-50">
+                                    <td>1005</td>
+                                    <td>Accessories</td>
+                                    <td>$120.00</td>
+                                    <td><span class="status text-xs text-white font-semibold rounded bg-red-500 p-1">OUT
+                                            OF STOCK</span></td>
+                                    <td><img class="bg-blue-500 text-white p-2 rounded"
+                                            src="assets/icons/white_search.svg" alt=""></td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td>1006</td>
+                                    <td>Accessories</td>
+                                    <td>$32.00</td>
+                                    <td><span
+                                            class="status text-xs text-white font-semibold rounded bg-yellow-500 p-1">LOWSTOCK</span>
+                                    </td>
+                                    <td><img class="bg-blue-500 text-white p-2 rounded"
+                                            src="assets/icons/white_search.svg" alt=""></td>
+
+
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td>1007</td>
+                                    <td>Accessories</td>
+                                    <td>$34.00</td>
+                                    <td><Span
+                                            class="status text-xs text-white font-semibold rounded bg-green-500 p-1">INSTOCK</Span>
+                                    </td>
+
+                                    <td><img class="bg-blue-500 text-white p-2 rounded"
+                                            src="assets/icons/white_search.svg" alt=""></td>
+
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td>1008</td>
+                                    <td>Electronics</td>
+                                    <td>$99.00</td>
+                                    <td><Span
+                                            class="status text-xs text-white font-semibold rounded bg-yellow-500 p-1">LOWSTOCK</Span>
+                                    </td>
+
+                                    <td><img class="bg-blue-500 text-white p-2 rounded"
+                                            src="assets/icons/white_search.svg" alt=""></td>
+
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td>1009</td>
+                                    <td>Electronics</td>
+                                    <td>$299.00</td>
+                                    <td><Span
+                                            class="status text-xs text-white font-semibold rounded bg-green-500 p-1">INSTOCK</Span>
+                                    </td>
+
+                                    <td><img class="bg-blue-500 text-white p-2 rounded"
+                                            src="assets/icons/white_search.svg" alt=""></td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="next cursor-pointer justify-center items-center py-3 flex">
+                            <img class="p-2" src="assets/icons/back.svg" alt="">
+                            <img id="prev_btn" class="p-2" src="assets/icons/previous.svg" alt="">
+                            <span class="one one_clicked flex items-center px-2">1</span>
+                            <span class="two p-2">2</span>
+                            <img id="next_btn" class="px-2" src="assets/icons/next.svg" alt="">
+                            <img class="p-2" src="assets/icons/nextt.svg" alt="">
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="container flex flex-wrap  justify-center my-6">
+                    <div class="row_div text-left">
+                        <div class="data_left  bg-white rounded shadow-md rounded my-6 p-2">
+                            <div class="text-lg">Tasks</div>
+                            <div class="py-2">Overview of your pending tasks.</div>
+                            <div class="orders font-medium">
+                                <div class="each_order my-4">
+                                    <div class="text-gray-700 font-semibold">12 Orders <span
+                                            class="font-normal text-gray-500">to
+                                            fulfill</span></div>
+                                    <div class="progress_bar my-1 bg-gray-200 rounded-full">
+                                        <div style="width: 60%; background-color: #64b5f6" class="order bg-purple-400 rounded-full"></div>
+                                    </div>
+                                </div>
+                                <div class="each_order my-4">
+                                    <div class="text-gray-700 font-semibold">40+ Payments <span
+                                            class="font-normal text-gray-500">to
+                                            withdraw</span></div>
+                                    <div class="progress_bar my-1 bg-gray-200 rounded-full">
+                                        <div style="width: 45%; background-color: #a5d6a7" class="order bg-green-300 rounded-full"></div>
+                                    </div>
+                                </div>
+                                <div class="each_order my-4">
+                                    <div class="text-gray-700 font-semibold">4 Repors<span
+                                            class="font-normal text-gray-500">to
+                                            revise</span></div>
+                                    <div class="progress_bar my-1 bg-gray-200 rounded-full">
+                                        <div style="width: 70%; background-color: #7986cb" class="order bg-purple-400 rounded-full"></div>
+                                    </div>
+                                </div>
+                                <div class="each_order my-4">
+                                    <div class="text-gray-700 font-semibold">6 Questions<span
+                                            class="font-normal text-gray-500">to
+                                            respond</span></div>
+                                    <div class="progress_bar my-1 bg-gray-200 rounded-full">
+                                        <div style="width: 30%; background-color: #9575cd" class="order bg-purple-400 rounded-full"></div>
+                                    </div>
+                                </div>
+                                <div class="each_order my-4">
+                                    <div class="text-gray-700 font-semibold">2 Chargebacks <span
+                                            class="font-normal text-gray-500">to
+                                            review</span></div>
+                                    <div class="progress_bar my-1 bg-gray-200 rounded-full">
+                                        <div style="width: 55%; background-color: #4db6ac" class="order bg-purple-400 rounded-full"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="sellers_left bg-white rounded  shadow-md my-6">
+                            <div class="text-lg font-medium px-4">Best Sellers</div>
+                            <div class="py-2 px-4">Most popular products from your collection.</div>
+
+                            <table class="sellers_table text-sm bg-white my-4 mx-4 p-3" style="width: 90%;">
+                                <thead class="text-sm text-gray-600 leading-normal">
+                                    <tr class="text-left">
+                                        <th>Product </th>
+                                        <th>Sales</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="flex items-center text-gray-600 leading-normal text-base"><img
+                                                src="assets/images/asset 7.jpeg" alt=""> Bamboo Watch</td>
+                                        <td>$65</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="flex items-center text-gray-600 leading-normal text-base"><img
+                                                src="assets/images/asset 8.jpeg" alt=""> Black Watch</td>
+                                        <td>$72</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="flex items-center text-gray-600 leading-normal text-base"><img
+                                                src="assets/images/asset 9.jpeg" alt=""> Blue Brand</td>
+                                        <td>$79</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="flex items-center text-gray-600 leading-normal text-base"><img
+                                                src="assets/images/asset 10.jpeg" alt=""> Blue T-Shirt</td>
+                                        <td>$29</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="flex items-center text-gray-600 leading-normal text-base"><img
+                                                src="assets/images/asset 11.jpeg" alt=""> Bracelet</td>
+                                        <td>$15</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="flex items-center text-gray-600 leading-normal text-base"><img
+                                                src="assets/images/asset 12.jpeg" alt=""> Brown Purse</td>
+                                        <td>$120</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="flex items-center text-gray-600 leading-normal text-base"><img
+                                                src="assets/images/asset 13.jpeg" alt=""> Chakra Bracelet</td>
+                                        <td>$32</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="row_div2 ml-5" style="width: 70%;">
+                        <div class="pie_container bg-white rounded p-3 shadow-md">
+                            <div class="text-lg font-medium">Revenue stream</div>
+                            <div class="py-2">Comparison of your revenue sources.</div>
+                            <div class="pie_chart">
+                                <canvas height="400px" width="200px" id="revenueChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="team_table  bg-white rounded  shadow-md my-6">
+                            <div class="text-lg font-medium p-3">Team Members</div>
+                            <div class="employ shadow-md p-4">
+                                <div class="each_row flex justify-between items-center p-3">
+                                    <div class="flex">
+                                        <img src="assets/images/asset 14.png" alt="">
+                                        <div class="px-2">
+                                            <div class="text-gray-600 leading-normal font-semibold font">Amy Elsner
+                                            </div>
+                                            <div class="text-xs">Accounting</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="msg"> <img src="assets/icons/message.svg" alt=""> </div>
+                                        <div class="set"> <img src="assets/icons/set.svg" alt=""> </div>
+
+                                    </div>
+                                </div>
+                                <div class="each_row flex justify-between items-center p-3">
+                                    <div class="flex">
+                                        <img src="assets/images/asset 15.png" alt="">
+                                        <div class="px-2">
+                                            <div class="text-gray-600 leading-normal font-semibold font">Anna Fali</div>
+                                            <div class="text-xs">Procurement</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="msg"> <img src="assets/icons/message.svg" alt=""> </div>
+                                        <div class="set"> <img src="assets/icons/set.svg" alt=""> </div>
+
+                                    </div>
+                                </div>
+                                <div class="each_row flex justify-between items-center p-3">
+                                    <div class="flex">
+                                        <img src="assets/images/asset 16.png" alt="">
+                                        <div class="px-2">
+                                            <div class="text-gray-600 leading-normal font-semibold font">Bernardo
+                                                Dominic</div>
+                                            <div class="text-xs">Finance</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="msg"> <img src="assets/icons/message.svg" alt=""> </div>
+                                        <div class="set"> <img src="assets/icons/set.svg" alt=""> </div>
+
+                                    </div>
+                                </div>
+                                <div class="each_row flex justify-between items-center p-3">
+                                    <div class="flex">
+                                        <img src="assets/images/asset 17.png" alt="">
+                                        <div class="px-2">
+                                            <div class="text-gray-600 leading-normal font-semibold font">Ivan Magalhaes
+                                            </div>
+                                            <div class="text-xs">Sales</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="msg"> <img src="assets/icons/message.svg" alt=""> </div>
+                                        <div class="set"> <img src="assets/icons/set.svg" alt=""> </div>
+
+                                    </div>
+                                </div>
+                                <div class="each_row flex justify-between items-center p-3">
+                                    <div class="flex">
+                                        <img src="assets/images/asset 18.png" alt="">
+                                        <div class="px-2">
+                                            <div class="text-gray-600 leading-normal font-semibold font">Xuxue Feng
+                                            </div>
+                                            <div class="text-xs">Management</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="msg"> <img src="assets/icons/message.svg" alt=""> </div>
+                                        <div class="set"> <img src="assets/icons/set.svg" alt=""> </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <footer class="text-gray-700 p-3 flex justify-between">
+                <div class="left_foot font-semibold  flex">
+                    <img class="mx-2" src="assets/icons/logo.svg" alt=""> DIAMOND
+                </div>
+                <div class="right_foot text-gray-500">
+                    &copy Your Organisation - 2023
+                </div>
+            </footer>
+
+        </div>
+
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
